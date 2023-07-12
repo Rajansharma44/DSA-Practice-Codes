@@ -22,11 +22,5 @@ int main()
      cout << " Both p and x => " << p_x << endl;
      cout <<  " &x => " << &x << endl;
 
-    
-
-
-
-
-
         return 0;
 }

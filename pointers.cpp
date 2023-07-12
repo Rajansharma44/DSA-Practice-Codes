@@ -15,7 +15,7 @@ int main()
      cout << *p << endl;   // But here we get real value which we provide 
 
      int **p_x= &p; // by using two pointer variable p and x  not both can conatain memory address of &p  p and x are not two varialble they are one p_x which contain memory address of p .
-            // memory address of &p = 0x7ffe83906588 
+                     // memory address of &p = 0x7ffe83906588 
      cout  << " first =>  " << p  << endl;
      cout  << " second  =>  " << &p  << endl;
      cout << " x => " << x << endl;

@@ -87,3 +87,39 @@ int main()
 
     return 0;
 }
+
+// Leet code best approach method 
+#include<bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        if (headA == nullptr || headB == nullptr) {
+        return nullptr; // One of the lists is empty, so there can't be an intersection.
+    }
+
+    ListNode* ptrA = headA;
+    ListNode* ptrB = headB;
+
+    while (ptrA != ptrB) {
+        ptrA = ptrA->next;
+        ptrB = ptrB->next;
+
+        if (ptrA == ptrB) {
+            return ptrA; // Intersection point found.
+        }
+
+        if (ptrA == nullptr) {
+            ptrA = headB; // Redirect ptrA to the head of the second list.
+        }
+
+        if (ptrB == nullptr) {
+            ptrB = headA; // Redirect ptrB to the head of the first list.
+        }
+    }
+
+    return ptrA; // Return either ptrA or ptrB (they point to the same intersection node).
+}
+        
+    
+};

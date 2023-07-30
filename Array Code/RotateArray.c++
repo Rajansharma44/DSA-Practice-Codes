@@ -1,6 +1,6 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h>               //optimal approach
 using namespace std;
-int main()
+int main() 
 {
     int arr[]={1,2,3,4,5};
     int size= sizeof(arr)/sizeof(arr[0]);

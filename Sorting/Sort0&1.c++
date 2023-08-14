@@ -12,7 +12,7 @@ int main()
     return 0;
 }
  
-                                                  // 2nd approach  using two pointer
+                                                  //  2nd approach  using two pointer
 #include<bits/stdc++.h>
 using namespace std;
 int main()

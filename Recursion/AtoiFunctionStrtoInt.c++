@@ -7,7 +7,7 @@ public:
         }
 
         int sign = 1;
-        if (index < s.length() && (s[index] == '+' || s[index] == '-')) {              //Leetcode solution 
+        if (index < s.length() && (s[index] == '+' || s[index] == '-')) {                    //Leetcode solution 
             sign = (s[index] == '-') ? -1 : 1;
             index++;
         }

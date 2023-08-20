@@ -6,7 +6,7 @@ int isfact(int n)
      {
         return 1;
      }
-     return   isfact(n-1) * n;             //This is the formula of finding the factorial
+     return   isfact(n-1) * n;             //     This is the formula of finding the factorial
 }
 int main()
 {

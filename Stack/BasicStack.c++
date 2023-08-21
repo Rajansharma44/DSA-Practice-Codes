@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std;                //Using array  Lifo 
+using namespace std;                  //Using array  Lifo  Stack
 class Stack
 {
     int top;

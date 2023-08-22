@@ -59,7 +59,7 @@ int main()
 }
 
 
-                                                           // 3 approach using 3 pointer
+                                                           //   3 approach using 3 pointer
 #include<bits/stdc++.h>
 using namespace std;
 int main()

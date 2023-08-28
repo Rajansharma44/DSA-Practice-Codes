@@ -10,7 +10,7 @@ int setBit(int n,int pos)  //n=0101
 }
 int clearBit(int n,int pos) //0101  we have to clear bit at 2 position so using ~ we make it 1's compliment
 {
-    int mask=~(1 << pos);
+    int mask=~(1 << pos);   // we are doing masking here 
     return (n & mask);
 }
 

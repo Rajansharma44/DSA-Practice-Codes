@@ -8,7 +8,7 @@ void selectionSort(int arr[], int n)
 {
 	int i, j, min_idx;
 
-	// One by one move boundary of
+	// One by one move boundary of     
 	// unsorted subarray
 	for (i = 0; i < n - 1; i++) {
 

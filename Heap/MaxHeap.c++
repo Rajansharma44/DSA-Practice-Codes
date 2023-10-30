@@ -7,7 +7,7 @@ class Heap
  int size;
  Heap()
  {
-   size=0;
+   size=0;   
    arr[0]=-1;
  }
  void insertVal(int val)

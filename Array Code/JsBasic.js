@@ -79,3 +79,106 @@ fn(log2);
 
 // cat.speak()   // and call the function wiht help of constructor
 // dog.speak();
+// Function inside the other function 
+
+
+// function square(n)
+
+// {
+//     return n*n;
+// }
+
+// function sumOfSquare(a,b)    // above we declare the  one function and we declare the one anothe function under the second function we created 
+// {
+//     const val1= square(a);
+//     const val2=square(b);
+//     return val1 + val2;
+// }
+
+// const pow = sumOfSquare(5,5);
+// console.log(pow);
+
+
+
+    // callback functions 
+
+    // function square(n)
+    // {
+    //     return n*n;
+    // }
+
+    // function cube(n)
+    // {
+    //     return n*n*n;    // dumb  way 
+    // }
+
+    // function sumOfSquare(a,b)
+    // {
+    //     const val1= square(a);
+    //     const val2 = cube(b);
+    //     return val1 + val2;
+    // }
+
+    // const pow= sumOfSquare(2,2);
+    // console.log(pow);
+
+
+    //let's write the good solution 
+
+    // function square(n)
+    // {
+    //     return n*n*n*n;
+    // }                //function callback means is that we don't have to write function again and again like i created something function here 
+    //                 // we can create as many we want like square function i created this is function callBack
+
+    // function something(a,b,fn)
+    // {
+    //     const val1= fn(a);
+    //     const val2 = fn(b);
+    //     return val1 + val2;
+    // }
+
+    // const pow= something(10,2,square);
+    // console.log( pow);
+
+
+    // function findsum(n)   //Asynchronous function
+    // {
+    //     let ans=0;
+    //     for( let i=0;i<n;i++)
+    //     {
+    //         ans+= i;
+    //     }
+    //     return ans;
+    // }
+    // function findsumtill100()
+    // {
+    //     return findsum(100);
+    // }
+
+    // setTimeout(findsumtill100,4000);  //This line is the asynchronous function 
+    // console.log("Hello world")
+
+//More one code of async await code 
+
+function RajanWork()
+{
+    let p= new Promise(function(resolve)
+    {
+        setTimeout(function()
+        {
+            resolve("Heloo Mother Father");
+        },3000)
+        
+    })
+    return p;
+}
+
+async function main()
+{
+    const val= await RajanWork();
+    console.log(val);
+}
+
+main();
+console.log("After Main")

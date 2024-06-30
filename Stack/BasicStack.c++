@@ -5,7 +5,7 @@ class Stack
     int top;
     int size;
     int* arr;
-    public:
+    public:       
     Stack()
     {
         top=-1;

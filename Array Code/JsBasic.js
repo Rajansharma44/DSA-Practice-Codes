@@ -85,7 +85,7 @@ fn(log2);
 // function square(n)
 
 // {
-//     return n*n;
+//     return n*n;      
 // }
 
 // function sumOfSquare(a,b)    // above we declare the  one function and we declare the one anothe function under the second function we created 

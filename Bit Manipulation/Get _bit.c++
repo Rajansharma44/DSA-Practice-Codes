@@ -7,5 +7,5 @@ int GetManipulation(int n,int pos)
  int main()
  {
     cout << GetManipulation(5,2) << endl;
-    return 0;
+    return 0;        
  }

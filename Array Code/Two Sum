@@ -1,0 +1,41 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+      int low=0;
+      int high=nums.size()-1;
+      int n=nums.size();
+
+      vector<int> nums2(nums);
+      sort(nums2.begin(),nums2.end());
+      for(int i=0;i<n;i++)
+      {
+        if(nums2[high] + nums2[low] == target)
+        
+            break;
+        
+        else if(nums2[high] + nums2[low] >  target )
+        
+           high--;
+        
+        else
+        
+          low++;
+      }
+        vector<int> v;
+        for(int i=0;i<n;i++)
+
+        {
+            if(nums[i] == nums2[low])
+            
+                v.push_back(i);
+            
+            else if(nums[i] == nums2[high])
+        v.push_back(i);            
+        }
+        
+      
+       return v;
+ 
+    }
+     
+};
